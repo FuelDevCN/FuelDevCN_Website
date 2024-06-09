@@ -1,3 +1,11 @@
+/*
+ * @Author: lxj 1851816672@qq.com
+ * @Date: 2024-06-10 00:15:41
+ * @LastEditors: lxj 1851816672@qq.com
+ * @LastEditTime: 2024-06-10 01:21:00
+ * @FilePath: /FuelCN/app/(auth)/articles/[id]/page.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { notFound } from 'next/navigation';
 import Head from 'next/head';
 
@@ -27,7 +35,7 @@ const articles: Article[] = [
         date: 'Mar 6, 2024',
         readTime: '12 min read',
         image: '/images/1.png',
-        authorImage: '/images/author-image.png',
+        authorImage: '/images/testimonial.jpg',
     },
     // 添加更多文章
 ];
@@ -52,7 +60,7 @@ const ArticlePage: React.FC<Props> = ({ params }) => {
     }
 
     return (
-        <div>
+        <div className='mt-[60px]'>
             <Head>
                 <title>{article?.title}</title>
                 <meta name="description" content={article?.description} />

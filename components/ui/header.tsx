@@ -2,7 +2,7 @@
  * @Author: lxj 1851816672@qq.com
  * @Date: 2024-06-06 18:37:22
  * @LastEditors: lxj 1851816672@qq.com
- * @LastEditTime: 2024-06-07 20:52:16
+ * @LastEditTime: 2024-06-10 02:12:58
  * @FilePath: /FuelCN/components/ui/header.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -45,9 +45,9 @@ export default function Header() {
                   <Link href="/" className="cursor-pointer">News</Link>
                 </li>
                 <li>
-                  <Link href="" className="cursor-pointer">
+                  <a href="https://docs.fueldev.xyz/docs/sway/basics/variables/" className="cursor-pointer" target="_blank">
                     <span>Doc</span>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -57,14 +57,14 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
+              {/* <li>
                 <Link href="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li>
               <li>
                 <Link href="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Subscribe</span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <MobileMenu />
